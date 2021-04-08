@@ -74,3 +74,61 @@ graph.add_edge('C', 'E')
 graph.add_edge('D', 'E')
 graph.print_adj_list()
 graph.print_adj_matrix()
+
+
+## OUTPUT:
+'''
+
+Adjacency List: 
+
+Adjacency list of vertex: 0
+ head  -> 1 -> 2 
+
+Adjacency list of vertex: 1
+ head  -> 0 -> 2 -> 3 
+
+Adjacency list of vertex: 2
+ head  -> 0 -> 1 -> 3 -> 4 
+
+Adjacency list of vertex: 3
+ head  -> 1 -> 2 -> 4 
+
+Adjacency list of vertex: 4
+ head  -> 2 -> 3 
+
+Adjacency Matrix: 
+
+[0, 1, 1, 0, 0]
+[1, 0, 1, 1, 0]
+[1, 1, 0, 1, 1]
+[0, 1, 1, 0, 1]
+[0, 0, 1, 1, 0]
+
+---------------------------
+
+Adjacency List: 
+
+Adjacency list of vertex: A
+ head  -> B -> C 
+
+Adjacency list of vertex: B
+ head  -> A -> C -> D 
+
+Adjacency list of vertex: C
+ head  -> A -> B -> D -> E 
+
+Adjacency list of vertex: D
+ head  -> B -> C -> E 
+
+Adjacency list of vertex: E
+ head  -> C -> D 
+
+Adjacency Matrix: 
+
+[0, 1, 1, 0, 0]
+[1, 0, 1, 1, 0]
+[1, 1, 0, 1, 1]
+[0, 1, 1, 0, 1]
+[0, 0, 1, 1, 0]
+
+'''
