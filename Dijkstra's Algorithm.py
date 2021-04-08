@@ -46,7 +46,7 @@ class Graph:
  
         return dist, prev
  
-    def find_path(self,pr, vert):  # generate path list based on parent points 'prev'
+    def find_path(self,pr, vert): 
         rev = []
         while vert is not None:
             rev.append(vert)
@@ -71,13 +71,15 @@ M=int(input())
 myGraph = Graph(N)
  
 for i in range(M):
-    u,v,w = map(int,input().split())
+    u,v,w = map(int,input().split()) 
+    #u,v = map(str,input().split()) ##to take string values
+    #w=int(input())
     myGraph.add_edge(u, v,w)    
  
-src=int(input())
-dest=int(input())
+src=int(input()) ## remove int() to take string values
+dest=int(input())  ## remove int() to take string values
  
-blocked= list(map(int,input().split()))
+blocked= list(map(int,input().split()))  ## remove int() to take string values
  
 myGraph.remove_blocked(blocked)
  
