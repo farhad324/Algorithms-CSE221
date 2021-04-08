@@ -1,0 +1,94 @@
+class Graph:
+    def __init__(self, vertices):
+        self.V = vertices
+        self.graph = {}
+ 
+ 
+    def add_edge(self, src, dest,weight):
+ 
+        if self.graph.get(src) == None:
+            self.graph[src]=[(dest,weight)]
+        else:
+            self.graph[src]=self.graph.get(src)+[(dest,weight)]
+ 
+ 
+    def dijkstra(self,src, dst=None):
+        
+        vertices = []
+        for n in self.graph:
+            vertices.append(n)
+            for v in self.graph[n]:
+                vertices +=[v[0]]
+ 
+        queue = set(vertices)
+        vertices = list(queue)
+        
+        dist = {}
+        prev = {}
+        for n in vertices:
+            dist[n] = float('inf')
+            prev[n] = None
+ 
+        dist[src] = 0
+ 
+        while queue:
+            u = min(queue, key=dist.get)
+            queue.remove(u)
+ 
+            if dst is not None and u == dst:
+                return dist[dst], prev
+ 
+            for v, w in self.graph.get(u, ()):
+                alt = dist[u] + w
+                if alt < dist[v]:
+                    dist[v] = alt
+                    prev[v] = u
+ 
+        return dist, prev
+ 
+    def find_path(self,pr, vert):  # generate path list based on parent points 'prev'
+        rev = []
+        while vert is not None:
+            rev.append(vert)
+            vert = pr[vert]
+        return rev[::-1]
+ 
+    def remove_blocked(self,bl):
+        for i in self.graph:
+            for j in self.graph[i]:
+                if j[0] in bl:
+                    self.graph[i].remove(j)
+ 
+dest_names={
+    0:'Mouchak',1:'Panthapath',2:'Rampura',3:'Shahbagh',
+    4:'Dhanmondi',5:'Lalmatia',6:'Badda',7:'Hatirjheel',
+    8:'Nilkhet',9:'TSC',10:'Dhaka University',11:'BUET'
+}
+ 
+N=int(input())
+M=int(input())
+ 
+myGraph = Graph(N)
+ 
+for i in range(M):
+    u,v,w = map(int,input().split())
+    myGraph.add_edge(u, v,w)    
+ 
+src=int(input())
+dest=int(input())
+ 
+blocked= list(map(int,input().split()))
+ 
+myGraph.remove_blocked(blocked)
+ 
+cost, prev = myGraph.dijkstra(src, dest)
+path = myGraph.find_path(prev, dest)
+ 
+ 
+for i in path:
+    if i==path[0]:
+        print("{}".format(dest_names[i]), end="")
+    else:
+        print("->{}".format(dest_names[i]), end="")
+print()
+print("Path cost: {}".format(cost))
