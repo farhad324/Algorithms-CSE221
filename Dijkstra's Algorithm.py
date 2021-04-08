@@ -92,3 +92,38 @@ for i in path:
         print("->{}".format(dest_names[i]), end="")
 print()
 print("Path cost: {}".format(cost))
+
+
+## INPUT:
+'''
+12
+16
+0 1 5
+0 2 2
+0 3 10
+1 4 20
+1 5 10
+2 6 3
+2 7 12
+3 8 5
+3 9 8
+4 11 5
+5 10 6
+7 8 2
+8 10 10
+8 11 12
+9 11 2
+11 10 2
+0
+10
+2 5 6 8
+
+'''
+
+## OUTPUT:
+
+'''
+Mouchak->Shahbagh->TSC->BUET->Dhaka University
+Path cost: 22
+
+'''
