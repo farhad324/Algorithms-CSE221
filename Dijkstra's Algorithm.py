@@ -2,6 +2,7 @@ class Graph:
     def __init__(self, vertices):
         self.V = vertices
         self.graph = {}
+        self.blocked=[]
  
  
     def add_edge(self, src, dest,weight):
@@ -39,6 +40,8 @@ class Graph:
                 return dist[dst], prev
  
             for v, w in self.graph.get(u, ()):
+                if v in self.blocked:
+                    w=float('inf')
                 alt = dist[u] + w
                 if alt < dist[v]:
                     dist[v] = alt
@@ -53,11 +56,8 @@ class Graph:
             vert = pr[vert]
         return rev[::-1]
  
-    def remove_blocked(self,bl):
-        for i in self.graph:
-            for j in self.graph[i]:
-                if j[0] in bl:
-                    self.graph[i].remove(j)
+    def add_blocked(self,bl):
+        self.blocked=bl
  
 dest_names={
     0:'Mouchak',1:'Panthapath',2:'Rampura',3:'Shahbagh',
@@ -81,7 +81,7 @@ dest=int(input())  ## remove int() to take string values
  
 blocked= list(map(int,input().split()))  ## remove int() to take string values
  
-myGraph.remove_blocked(blocked)
+myGraph.add_blocked(blocked)
  
 cost, prev = myGraph.dijkstra(src, dest)
 path = myGraph.find_path(prev, dest)
