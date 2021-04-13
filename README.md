@@ -6,3 +6,4 @@
 ## Content:
 - Graph Representations (Undirected)
 - Dijkstra's Algorithm
+- Kruskal's Algorithm
