@@ -43,7 +43,7 @@ print('Least Common Subsequence length-->',MySeq.lcs_length())
 print('Least Common Subsequence-->',MySeq.lcs_sequence())
 
 
-##Output:
+##OUTPUT:
 '''
 Least Common Subsequence length--> 6
 Least Common Subsequence--> CEFABC
