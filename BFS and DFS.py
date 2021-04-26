@@ -64,3 +64,10 @@ graph.BFS('Q')
 print()
 print('Depth First Search: ',end='')
 graph.DFS('Q')
+
+##OUTPUT:
+'''
+Breath First Search: Q M P N R O 
+Depth First Search: Q N O P M R
+
+'''
