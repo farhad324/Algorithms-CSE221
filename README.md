@@ -5,6 +5,7 @@
 
 ## Content:
 - Graph Representations (Undirected)
-- BFS and DFS
+- BFS and DFS Algorithms
 - Dijkstra's Algorithm
 - Kruskal's Algorithm
+- LCS Algorithms
