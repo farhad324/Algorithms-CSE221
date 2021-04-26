@@ -8,4 +8,4 @@
 - BFS and DFS Algorithms
 - Dijkstra's Algorithm
 - Kruskal's Algorithm
-- LCS Algorithms
+- LCS Algorithm
