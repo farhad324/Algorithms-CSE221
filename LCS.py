@@ -41,3 +41,11 @@ str2 = "CEFDABGAC"
 MySeq=LCS(str1,str2)
 print('Least Common Subsequence length-->',MySeq.lcs_length())
 print('Least Common Subsequence-->',MySeq.lcs_sequence())
+
+
+##Output:
+'''
+Least Common Subsequence length--> 6
+Least Common Subsequence--> CEFABC
+
+'''
