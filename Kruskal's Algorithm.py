@@ -63,3 +63,11 @@ mst,min_w = kruskalAlgo(edges, N)
  
 print('Edges in the constructed MST:',mst)
 print('Minimum Cost Spanning Tree:',min_w)
+
+
+
+##OUTPUT:
+'''
+Edges in the constructed MST: [(0, 3, 5), (2, 4, 5), (3, 5, 6), (0, 1, 7), (1, 4, 7), (4, 6, 9)]
+Minimum Cost Spanning Tree: 39
+'''
