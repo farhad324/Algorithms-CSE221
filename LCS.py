@@ -4,8 +4,7 @@ class LCS:
         self.str2=str2
         self.m=len(str1)
         self.n=len(str2)
-        dpin=[0]*(self.n+1)
-        self.dp=[dpin]*(self.m+1)
+        self.dp = [[0 for x in range(self.n + 1)] for x in range(self.m + 1)]
 
     def lcs_length(self):
         for i in range(self.m): 
