@@ -10,7 +10,7 @@
 - Binary Search
 - Ternary Search
 - Jump Search
-- Interpolation Search
+- Interpolation Search (improved variant of binary search)
 - Graph Representations (Undirected)
 - BFS and DFS Algorithms
 - Topological Sort
