@@ -19,7 +19,7 @@
 - Kruskal's Algorithm
 - Prim's Algorithm
 - LCS Algorithm
-- Fractional Knapsack
+- Fractional Knapsack (aka Continuous Knapsack)
 - 0-1 Knapsack Problem
 - Edit Distance Algorithm
 - Huffman Coding
