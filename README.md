@@ -14,6 +14,7 @@
 - Graph Representations (Undirected)
 - BFS and DFS Algorithms
 - Topological Sort
+- Minimum Coin Change (Greedy Method)
 - Dijkstra's Algorithm
 - Kruskal's Algorithm
 - Prim's Algorithm
