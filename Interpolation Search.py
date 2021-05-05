@@ -32,3 +32,8 @@ if index != -1:
     print("Element found at index", index)
 else:
     print("Element found not in the list")
+  
+  ##OUTPUT:
+'''
+Element found at index 2
+'''
