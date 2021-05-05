@@ -32,3 +32,10 @@ def bucketSort(array):
 array = [.44, .39, .33, .21, .51, .47, .51]
 sorted_array = bucketSort(array)
 print("Sorted Array:",sorted_array)
+
+## OUTPUT:
+
+'''
+Sorted Array: [0.21, 0.33, 0.39, 0.44, 0.47, 0.51, 0.51]
+
+'''
