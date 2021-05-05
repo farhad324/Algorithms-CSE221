@@ -7,6 +7,12 @@ for i in C:
     coins+=[i]*(remaining//i)
     remaining = remaining - ((remaining//i)*i)
 print('Minimal Number of Coins:',count)
-print('Minimal Change',coins)
+print('Minimal Change:',coins)
 
-     
+## OUTPUT:
+
+'''
+Minimal Number of Coins: 5
+Minimal Change: [50, 20, 20, 2, 1]
+
+'''
