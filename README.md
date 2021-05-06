@@ -4,8 +4,9 @@
  - Python 3
 
 ## Content:
-- Merge Sort Algorithm
-- Quick Sort Algorithm
+- Merge Sort 
+- Quick Sort
+- Counting Sort 
 - Bucket Sort
 - Binary Search
 - Ternary Search
