@@ -8,6 +8,7 @@
 - Quick Sort
 - Counting Sort 
 - Bucket Sort
+- Key Index Search and Sort
 - Binary Search
 - Ternary Search
 - Jump Search
