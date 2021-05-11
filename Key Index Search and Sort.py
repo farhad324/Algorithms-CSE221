@@ -42,7 +42,8 @@ print('Sorted Array:',key_ind.sort())
 print('Sorted Array with Negative Numbers:',key_ind.sort_neg([4,-2,3,-4,7,4]))
 ##OUPUT:
 '''
-Is 3 in the array: True
+s 3 in the array: True
 Sorted Array: [2, 3, 4, 4, 4, 7]
+Sorted Array with Negative Numbers: [-4, -2, 3, 4, 4, 7]
 
 '''
