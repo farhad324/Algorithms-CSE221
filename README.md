@@ -23,5 +23,5 @@
 - LCS Algorithm
 - Fractional Knapsack (aka Continuous Knapsack)
 - 0-1 Knapsack Problem
-- Edit Distance Algorithm
+- Edit Distance Algorithm (Levensthein Distance - Different Cost Value)
 - Huffman Coding
