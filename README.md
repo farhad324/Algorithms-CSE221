@@ -8,6 +8,7 @@
 - Quick Sort
 - Counting Sort 
 - Bucket Sort
+- Radix Sort
 - Key Index Search and Sort
 - Binary Search
 - Ternary Search
@@ -23,5 +24,5 @@
 - LCS Algorithm
 - Fractional Knapsack (aka Continuous Knapsack)
 - 0-1 Knapsack Problem
-- Edit Distance Algorithm (Levensthein Distance - Different Cost Value)
+- Edit Distance Algorithm (Levensthein Distance if all of the operations are of cost = 1)
 - Huffman Coding
