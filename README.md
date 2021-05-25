@@ -27,3 +27,4 @@
 - Edit Distance Recursive Algorithm (Levensthein Distance if all of the operations are of cost = 1) 
 - Edit Distance Dynamic Programming Algorithm 
 - Huffman Coding
+- Matrix Chain Multiplication (Dynamic Programming)
