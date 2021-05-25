@@ -29,3 +29,4 @@
 - Huffman Coding
 - Strassen’s Matrix Multiplication
 - Matrix Chain Multiplication (Dynamic Programming)
+- MiniMax Algorithm
