@@ -26,6 +26,7 @@
 - 0-1 Knapsack Problem
 - Edit Distance Recursive Algorithm (Levensthein Distance if all of the operations are of cost = 1) 
 - Edit Distance Dynamic Programming Algorithm 
+- Run Length Encoding
 - Huffman Coding
 - Strassen’s Matrix Multiplication
 - Matrix Chain Multiplication (Dynamic Programming)
